@@ -1,20 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <title>David Reinare Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, I'm David</h1>
-    <p>This is my portfolio website.</p>
 
-    <h2>My Skills</h2>
+<!-- NAVIGATION -->
+<nav>
     <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
     </ul>
+</nav>
 
-    <h2>Projects</h2>
-    <p>Coming soon...</p>
+<!-- HOME -->
+<section id="home">
+    <div class="home-text">
+        <h1>Hello, I Am</h1>
+        <h2>David Reinare Largo Baira!</h2>
+        <p>ABOUT ME</p>
+        <p>
+        A Computer Engineering student with foundational knowledge in programming, hardware–software integration, and working with microcontrollers and computer systems gained through academic projects and laboratory activities. Highly motivated, detail-oriented, and eager to apply problem-solving skills and technical knowledge in real-world engineering and technology environments.
+        </p>
+    </div>
+
+    <div class="home-img">
+        <img src="images/Pic.jpg" alt="Profile Picture">
+    </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+    <h2>RESUME</h2>
+    <div class="resume-box">
+    <a href="resume/resume.pdf" download class="download-btn">
+    Download My Resume
+</a>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <h2>PORTFOLIO</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <h3>ESP32-CAM AI Project</h3>
+            <p>Object detection system using Edge Impulse.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>IoT Health Monitoring</h3>
+            <p>Real-time wearable dashboard system.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Network Topology</h3>
+            <p>Campus network simulation using GNS3.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>CONTACT ME</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
 </body>
 </html>
