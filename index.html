@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>David Reinare Baira Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="background"></div>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#certification">CERTIFICATION</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <div class="theme-switch">
+    <input type="checkbox" id="themeToggle">
+    <label for="themeToggle"></label>
+</div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+
+    <div class="home-text">
+
+        <h1>Hello, I Am</h1>
+
+        <h2>David Reinare Largo Baira!</h2>
+
+        <div class="home-role">
+            <h3>COMPUTER ENGINEER</h3>
+        </div>
+
+        <p class="about-label">ABOUT ME</p>
+
+        <p class="description">
+            A Computer Engineer with foundational knowledge in programming, hardware–software integration, and working with microcontrollers and computer systems gained through academic projects and laboratory activities. Highly motivated, detail-oriented, and eager to apply problem-solving skills and technical knowledge in real-world engineering and technology environments.
+
+        <div class="home-buttons">
+
+            <a href="#portfolio" class="btn-primary">
+                <i class="fas fa-code"></i>
+                View My Projects
+            </a>
+
+            <a href="#contact" class="btn-secondary">
+                <i class="fas fa-envelope"></i>
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="home-img">
+        <img src="images/Pic.jpg" alt="Profile Picture">
+    </div>
+
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+
+  <div class="resume-box">
+    <!-- Preview Image -->
+    <img src="resume/resume-preview.png">
+
+    <!-- Download Button -->
+    <a href="resume/resume.pdf" download class="download-btn">
+      Download
+    </a>
+  </div>
+</section>
+
+<!-- My Projects -->
+<section id="portfolio">
+
+    <h2>MY PROJECTS</h2>
+
+    <!-- AUTO CAD BUTTON -->
+    <div class="portfolio-card" onclick="openGallery()">
+        <p>AutoCad 2D</p>
+    </div>
+
+
+    <!-- GALLERY -->
+    <div id="gallery">
+
+          <!-- ROW 1: IMAGE LEFT / DESCRIPTION RIGHT -->
+        <div class="gallery-row">
+
+            <div class="gallery-image">
+                <img src="images/floorplan.png" alt="House FloorPlan">
+            </div>
+
+            <div class="gallery-description">
+                <h3>House FloorPlan</h3>
+                <p>
+                    This floor plan is a two-story house designed with complete living spaces. The ground floor is mainly for common activities such as cooking, dining, and relaxing, while the second floor provides private spaces such as bedrooms, a study area, and a balcony.
+                </p>
+            </div>
+
+        </div>
+
+        <p>Using Sketchup 3D Model</p>
+        <!-- ROW 1: IMAGE LEFT / DESCRIPTION RIGHT -->
+        <div class="gallery-row reverse">
+
+            <div class="gallery-image">
+                <img src="images/Front.png" alt="AutoCAD House">
+            </div>
+
+            <div class="gallery-description">
+                <h3>Front</h3>
+                <p>
+                    This image shows the front view of the 3D house design. It presents the main exterior features of the house, including the entrance, windows, roof, and front façade. This view highlights the overall appearance and architectural design of the house.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ROW 2: DESCRIPTION LEFT / IMAGE RIGHT -->
+        <div class="gallery-row">
+
+            <div class="gallery-image">
+                <img src="images/Left.png" alt="House Exterior">
+            </div>
+
+            <div class="gallery-description">
+                <h3>Left Side</h3>
+                <p>
+                    This image shows the left side of the 3D house model. It provides a clear view of the side structure, windows, walls, roof, and other exterior details. This perspective helps show how the different parts of the house are connected.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ROW 3: IMAGE LEFT / DESCRIPTION RIGHT -->
+        <div class="gallery-row reverse">
+
+            <div class="gallery-image">
+                <img src="images/Right.png" alt="House Interior">
+            </div>
+
+            <div class="gallery-description">
+                <h3>Right Side</h3>
+                <p>
+                    This image presents the right side of the 3D house design. It shows the arrangement of the walls, windows, roof, and other architectural elements from a different perspective. This view helps demonstrate the overall structure and proportions of the house.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ROW 4: DESCRIPTION LEFT / IMAGE RIGHT -->
+        <div class="gallery-row">
+
+            <div class="gallery-image">
+                <img src="images/Back.png" alt="House Perspective">
+            </div>
+
+            <div class="gallery-description">
+                <h3>Back View</h3>
+                <p>
+                   This image shows the back view of the 3D house model. It presents the rear portion of the house, including its walls, windows, roof, and other exterior features. This view completes the overall presentation of the house design.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+ <div class="portfolio-card" onclick="openGallery()">
+        <h3>Arduino Projects</h3>
+    </div>
+
+     <!-- ROW 5: IMAGE LEFT / DESCRIPTION RIGHT -->
+        <div class="gallery-row reverse">
+
+           <video controls muted loop playsinline>
+    <source src="images/DetectImage.MP4" type="video/mp4">
+</video>
+
+            <div class="gallery-description">
+                <h3>Detecting Image</h3>
+                <p>
+                This video demonstrates the image detection system using an ESP32-CAM. The ESP32-CAM is used to capture images of objects placed in front of the camera. The captured image is then processed and analyzed using the trained Edge Impulse image detection model to identify the object.
+In this demonstration, the system is trained to detect objects such as correction tape, lighter and clip. Once an object is detected, the system identifies its name and calculates its confidence level, which shows how confident the model is in its detection. The result is then displayed on the 16x2 I2C LCD, where the first line shows the detected object and the second line shows its confidence percentage.
+The ESP32-CAM continuously captures images and sends them to the classifier for analysis. If an object is detected, the LCD displays its label and confidence, such as “Correction Tape” with a corresponding percentage. If no object is detected, the LCD displays “Detecting...” while the system continues searching for an object.
+                </p>
+            </div>
+
+        </div>
+
+    <!-- ROW 6: DESCRIPTION LEFT / IMAGE RIGHT -->
+        <div class="gallery-row">
+
+           <video controls muted loop playsinline>
+    <source src="images/Parking.mp4" type="video/mp4">
+</video>
+
+            <div class="gallery-description">
+                <h3>Automated Parking System</h3>
+                <p>
+                This project is an Arduino-based automated parking system prototype designed to monitor parking slot availability. The system uses infrared sensors to detect whether a parking slot is occupied or vacant and displays the current status of each slot on an LCD screen.
+When a vehicle enters or occupies a parking space, the system detects its presence and automatically updates the corresponding slot status from “Free” to “Occupied.” The prototype also includes an automated barrier gate to demonstrate how vehicle entry and parking access can be controlled.
+The project combines Arduino programming, infrared sensors, LCD display, and servo motor control to create a simple smart parking solution. It demonstrates my skills in embedded systems, automation, sensor integration, and hardware programming, while showing how technology can be used to improve parking management and monitoring.
+                </p>
+            </div>
+
+        </div>
+</section>
+
+<!-- CERTIFICATION -->
+<section id="certification">
+    
+    <div class="cert-img">
+    <img src="images/Cert1.png">
+   <img src="images/Cert2.png">
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Get In Touch</h2>
+    <p class="contact-subtitle">
+        Interested in working together? Let's connect!
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-card" onclick="copyText('davidbaira0@gmail.com')">
+            <div class="icon">📧</div>
+            <h3>Email</h3>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=davidbaira0@gmail.com" target="_blank" onclick="event.stopPropagation();">
+                davidbaira0@gmail.com
+            </a>
+        </div>
+
+        <div class="contact-card" onclick="copyText('+63 945 673 6583')">
+            <div class="icon">📱</div>
+            <h3>Phone</h3> 
+            <a href="tel:+639456736583" onclick="event.stopPropagation();">
+                +63 945 673 6583
+            </a> 
+        </div>
+
+        <div class="contact-card"  onclick="copyText('David Reinare Baira')">
+            <div class="icon">📘</div>
+            <h3>Facebook</h3>
+            <a href="https://www.facebook.com/david.reinare.baira/" target="_blank">
+                David Reinare Baira
+            </a>
+        </div>
+
+    </div>
+<div id="copied">Contact Information Text Copied!</div>
+</section>
+<script src="javascript.js"></script>
+</body>
+</html>
+
